@@ -1,0 +1,30 @@
+LevelDB:    version 1.22
+Date:       Wed Oct 14 17:07:58 2020
+CPU:        12 * AMD Ryzen 5 2600X Six-Core Processor
+CPUCache:   512 KB
+Keys:       16 bytes each
+Values:     100 bytes each (50 bytes after compression)
+Entries:    1000000
+RawSize:    110.6 MB (estimated)
+FileSize:   62.9 MB (estimated)
+WARNING: Optimization is disabled: benchmarks unnecessarily slow
+WARNING: Assertions are enabled; benchmarks unnecessarily slow
+WARNING: Snappy compression is not enabled
+------------------------------------------------
+... finished 1000000 ops                              fillseq      :       4.188 micros/op;   26.4 MB/s
+... finished 1000 ops                              fillsync     :    3363.511 micros/op;    0.0 MB/s (1000 ops)
+... finished 2500 ops                              fillrandom   :      21.720 micros/op;    5.1 MB/s
+... finished 1000 ops                              overwrite    :      26.566 micros/op;    4.2 MB/s
+... finished 2000 ops                              readrandom   :       9.977 micros/op; (1000000 of 1000000 found)
+... finished 35000 ops                              readrandom   :       7.092 micros/op; (1000000 of 1000000 found)
+... finished 15000 ops                              readseq      :       0.543 micros/op;  203.7 MB/s
+... finished 600000 ops                              readreverse  :       1.204 micros/op;   91.9 MB/s
+compact      : 2072689.000 micros/op;
+... finished 40000 ops                              readrandom   :       4.484 micros/op; (1000000 of 1000000 found)
+... finished 15000 ops                              readseq      :       0.465 micros/op;  237.7 MB/s
+... finished 600000 ops                              readreverse  :       1.007 micros/op;  109.9 MB/s
+... finished 3000 ops                              fill100K     :    3296.775 micros/op;   28.9 MB/s (1000 ops)
+... crc=0xa46ab21fcrc32c       :       6.201 micros/op;  629.9 MB/s (4K per op)
+snappycomp   :    4842.000 micros/op; (snappy failure)
+snappyuncomp :    4950.000 micros/op; (snappy failure)
+
